@@ -2,291 +2,384 @@ body{
     margin: 0;
     padding: 0;
 }
-.maincontainer{
-    width: 100vw;
-    height: 100vh;
-    
-}
+
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 20px;
 }
-
-nav{
-    flex: 1;
-    text-align: right;
-}
-
-nav ul li{
-    display: inline-block;
-    text-align: right;
-    
-    
-}
-nav ul li a{
-    text-decoration: none;
-    margin-right: 40px;
-    font-family: 'Raleway';
-    color: hsl(238, 22%, 44%);
-    font-weight: 400;
-}
-.contone{
-    width: 100vw;
-    height: 100vh;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-
-}
-.contone h1{
-    font-family: 'Raleway';
-    padding-top: 25%;
-    padding-left: 25%;
-    text-align: left;
-    font-weight: 700;
-    color: hsl(243, 87%, 12%);
-}
-.contone p{
-    padding-left: 25%;
-    font-family: 'Raleway';
-    font-weight: 700;
-    color: hsl(238, 22%, 44%);
-}
-.contone input{
-    height: 30px;
-    margin-left: 25%;
-    width: 300px;
-    
-}
-.contone input:focus{
-    border: 1px solid red;
-    outline: none;
-}
-.btn{
-    padding: 9px 70px;
-    font-family: 'Raleway';
-    font-weight: 700;
-    background-color: hsl(224, 93%, 58%);
-    border: none;
-    color: hsl(240, 75%, 98%);
-    border-radius: 5px;
+.navbar img{
+    padding-left: 60px;
+    padding-top: 30px;
     cursor: pointer;
 }
-.btn:hover{
-    background-color:hsla(224, 93%, 58%, 0.5) ;
+nav{
+    flex: 1;
 }
-
-.imageone img{
-   height: 75%;
+.navbar nav ul{
+    text-align: right;
 }
-.conttwo{
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    margin-top: 100px;
-    background-color: hsl(240, 75%, 98%);
-    position: relative;
-    padding: 50px 0px;
+.navbar nav ul li{
+   list-style: none;
+   display: inline-block;
+   margin-right: 60px;
+   margin-top: 50px;
 }
-.conttwo::before{
-    content: '';
-    background-image: url(images/bg-curve-desktop.svg);
-    top: -50px;
-    left: 0px;
-    height: 50px;
-    width: 100%;
-    position: absolute;
-}
-.texttwo{
-    display: flex;
-    flex-direction: column;
-}
-.texttwo h2{
-    font-family: 'Raleway';
-    font-size: 40px;
-    color: hsl(243, 87%, 12%);
-    padding-left: 230px;
-}
-.texttwo p{
-    padding-left: 230px;
-    color: hsl(243, 87%, 12%);
-    font-family: 'Raleway';
-    font-weight: 700;
-}
-.texttwo a{
-    padding-left: 230px;
-    padding-top: 20px;
+.navbar nav ul li a{
+    text-decoration: none;
+    text-align: right;
+    font-family: 'raleway';
+    font-weight: 400;
     font-size: 18px;
-    font-family: 'Raleway';
-    color: hsl(170, 45%, 43%);
-    
 }
-.texttwo img{
-    height: 25px;
-    position: absolute;
-    padding-left: 5px;
-}
-.testimonial{
-    width: 450px;
-    height: 250px;
-    background-color: white;
-    margin-left: 230px;
-    margin-top: 30px;
-    border-radius: 10px;
-}
-.imagetwo{
-    padding-left: 40px;
-    padding-top: 30px;
-}
-.imagetwo img{
-    height: 20px;
-}
-.texttest p{
-    margin: 0 40px;
-    font-family: 'raleway';
-    line-height: 1.75;
-    color: hsl(243, 87%, 12%);
-
-}
-.imagetst{
-    position: relative;
-}
-.imagetst img{
-    border-radius: 50%;
-    height: 50px;
-    margin-left: 40px;
-    margin-top: 15px;
-}
-.imagetst h4{
-    position: absolute;
-    padding-left: 25%;
-    font-family: 'raleway';
-    color: hsl(243, 87%, 12%);
-    
-}
-.span{
-    font-weight: 100;
-    color: hsl(243, 87%, 12%);
-    font-size: 13px;
-}
-.lastimg{
-    position: absolute;
-}
-.lastimg img{
-    height: 590px;
-    margin-left: 130%
-}
-.earlyacc{
-    width: 100vw;
-    height: 500px;
-    background-color: hsl(238, 22%, 44%);
+.maincontainer{
+    width: 100%;
+    height: 3200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    
-}
-.textacc{
-    display: flex;
-    flex-direction: column ;
-    height: 50vh;
-    justify-content: center;
-    
-}
-.earlyacc h2{
-    padding-left: 230px;
+    grid-template-rows: 1fr 1fr 500px 700px ;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'raleway';
-    color: white;
-    font-size: 30px;
 }
-.earlyacc p{
-    padding-left: 230px;
-    font-family: 'raleway';
-    color: white;
+.partone{
+    padding-left: 60px;
+    padding-top: 20%;
+}
+.partone h1{
+    font-size: 50px;
+    color: hsl(243, 87%, 12%);
+}
+.partone p{
+    font-size: 22px;
     line-height: 2;
-    font-size: 18px;
 }
-.buttons{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding-left: 30%;
-
+.partone input{
+    padding: 10px 225px 10px 0px;
 }
-.buttons input{
-    height: 40px;
-    width: 400px;
-    margin-bottom: 20px;
-}
-.buttons input:focus{
-    border: 1px solid red;
+.partone input:focus{
+    border-radius: 1px;
+    border: solid 2px red;
     outline: none;
 }
-.footer{
-    background-color: hsl(243, 87%, 12%);
-    width: 100vw;
-    height: 600px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 100px;
+.partone .btn{
+    padding: 12px 90px 12px 90px;
+    text-align: center;
+    background-color:hsl(224, 93%, 58%) ;
+    color: hsl(240, 75%, 98%);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
 }
-.footercontent img{
-    filter: brightness(0) invert(1);
-    margin-top: 30px;
+.partone .btn:hover{
+    background-color: hsla(224, 93%, 58%, 0.5);
+}
+.parttwo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.parttre{
+    background-color: hsl(240, 75%, 98%);
+    position: relative;
+    padding-left: 60px;
+    padding-top: 10%;
+    margin-top: 10%;
+}
+.parttre::before{
+    content: '';
+    background-image: url(images/bg-curve-desktop.svg);
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    left: 0px;
+}
+.partfour{
+    background-color: hsl(240, 75%, 98%);
+    position: relative;
+    margin-top: 10%;
+}
+.partfour::before{
+    content: '';
+    background-image: url(images/bg-curve-desktop.svg);
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    transform: rotatey(180deg);
+}
+.parttre h2{
+    font-size: 50px;
+    color: hsl(243, 87%, 12%);
+}
+.parttre p{
+    font-size: 20px;
+    line-height: 2;
+    color: hsl(243, 87%, 12%);
+}
+.parttre a{
+    font-size: 20px;
+    color: green;
+}
+.arrow{
+    height: 25px;
+    display: inline;
+    margin: 0;
+}
+.testimonial{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    margin-top: 60px;
+    border-radius: 10px;
+
+}
+.quotes{
+    padding: 20px;
+    height: 20px;
+}
+.testimonial p{
+    font-size: 18px;
+    margin: 0px 100px 0px 30px;
+    display: inline-block;
     
 }
-.footercontent p{
+.testimg{
+    border-radius: 50%;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.span{
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+.p{
+    font-weight: 700;
+}
+.partfour img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.partfive{
+    height: 500px;
+    background-color: hsl(238, 22%, 44%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+}
+.partfive h3{
+    font-size: 50px;
+    color: white;
+}
+.partfive p{
+    color: white;
+    line-height: 2;
+}
+.partsix{
+    height: 500px;
+    background-color: hsl(238, 22%, 44%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+}
+.partsix .btn{
+    padding: 12px 90px 12px 90px;
+    text-align: center;
+    background-color:hsl(224, 93%, 58%) ;
+    color: hsl(240, 75%, 98%);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 15px;
+}
+.partsix .btn:hover{
+    background-color: hsla(224, 93%, 58%, 0.5);
+}
+.partsix input{
+    padding: 10px 425px 10px 0px;
+    align-self: flex-start;
+}
+.partseven{
+    background-color: hsl(243, 87%, 12%);
+    padding-left: 20%;
+    padding-top: 20%;
+    position: relative;
+
+}
+.partseven img{
+    filter: brightness(0) invert(1);
+}
+.logo{
+    position: absolute;
+    top: 15%;
+    left:20%;
+}
+.partseven .phone{
+    position: absolute;
+    left: 20%;
+    top: 27%;
+
+}
+.email{
+    position: absolute;
+    left: 20%;
+    top: 37%;
+}
+.partseven .number{
+    color: white;
     display: inline-block;
-   color: white;
+    position: absolute;
+    left: 25%;
+    top: 25%;
 }
-.aboutone{
+.mail{
     color: white;
-    padding-top: 180px;
-    line-height: 2.5;
+    position: absolute;
+    left: 25%;
+    top: 34.5%;
+    display: inline-block;
 }
-.aboutone ul li a{
+.partseven ul {
+    color: white;
+    list-style: none;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    line-height: 3;
+}
+
+.partseven ul li a{
     text-decoration: none;
     color: white;
-    font-family: 'raleway';
+    
 }
-.aboutone ul{
-    list-style: none;
-}
-.aboutone ul li a:hover{
-   color:hsl(224, 93%, 58%) ;
+.partseven ul li a:hover{
+    color: rgba(255, 255, 255, 0.404);
 }
 
 
 
-.abouttwo{
+
+.parteight{
+    background-color: hsl(243, 87%, 12%);
+    padding-left: 20%;
+    padding-top: 20%;
+    position: relative;
+}
+.parteight ul {
     color: white;
-    padding-top: 140px;
-    line-height: 2.5;
+    list-style: none;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    line-height: 3;
 }
-.abouttwo ul li a{
+
+.parteight ul li a{
     text-decoration: none;
     color: white;
-    font-family: 'raleway';
+    
 }
-.abouttwo ul{
-    list-style: none;
+.parteight ul li a:hover{
+    color: rgba(255, 255, 255, 0.404);
 }
-.abouttwo ul li a:hover{
-   color:hsl(224, 93%, 58%) ;
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    left: 60%;
+    top: 29%;
+    position: absolute;
 }
 .socialicons{
-    display: flex;
-   
-}
-.one{
     width: 50px;
     height: 50px;
     border: solid 1px white;
     border-radius: 50%;
-    margin: 10px;
+    position: relative;
+    margin-left: 20px;
+}
+@media screen and (max-width: 768px  ){
+    .maincontainer{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .partone{
+        align-items: center;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        order: -2;
+    }
+    .partone .btn{
+      margin-top: 10px;
+      padding-left: 165px;
+      padding-right: 165px;
+    }
+    .parttwo{
+        order: -3;
+    }
+    .parttre{
+        margin-top: 0;
+        padding-bottom: 30px;
+    }
+    .partfour{
+        order: -2;
+    }
+    .parttre::before{
+        content: '';
+        background-image: none; 
+    }
+    .partfive{
+        padding-left: 0%;
+        text-align: center;
+    }
+    .partsix{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0%;
+        padding-bottom: 20px;
+    }
+    .partsix input{
+        padding-right: 17%;
+        align-self: center;
+    
+    }
+    .partsix .btn{
+        align-self: center;
+    }
+    
+    footer{
+        display: none;
+    }
+    .partseven{
+        padding-bottom: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .partseven ul{
+        position: absolute;
+        left: 15%;
+        top: 40%;
+    }
+    .parteight ul{
+        position: absolute;
+        left: 15%;
+        top: -90%;
+    }
+    .parteight .social{
+        left: 38%;
+    }
 }
